@@ -3098,7 +3098,7 @@
               type="button"
               class="date-choice date-choice-all"
               data-day="todos"
-              aria-pressed="false"
+              aria-pressed="true"
               aria-label="Todos os dias, de 09 a 12 de novembro"
             >
               <span class="date-all-main">Todos</span>
@@ -3107,9 +3107,9 @@
             </button>
             <button
               type="button"
-              class="date-choice is-active"
+              class="date-choice"
               data-day="09"
-              aria-pressed="true"
+              aria-pressed="false"
               aria-label="09 de novembro, segunda-feira, 9º ano, Língua Portuguesa e Matemática"
             >
               <span class="date-icon">✓</span
@@ -3971,7 +3971,7 @@
         };
 
         const state = {
-          day: "09",
+          day: "todos",
           shift: "todos",
           applicant: "",
           search: "",
