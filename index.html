@@ -4111,7 +4111,7 @@
           const rows = rowsForFilter();
           $("applicantHint").textContent = state.applicant
             ? `Agenda individual ativada · ${rows.length} ${rows.length === 1 ? "aplicação" : "aplicações"} na seleção atual.`
-            : "Todos os aplicadores: consulta geral em tabela. Selecione um nome para ver a agenda.";
+            : "";
           $("statClasses").textContent = fmt.format(rows.length);
           $("statStudents").textContent = fmt.format(
             rows.reduce((sum, r) => sum + (r.students || 0), 0),
