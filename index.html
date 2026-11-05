@@ -4089,7 +4089,7 @@
                   return `<article class="agenda-card">
           <div class="agenda-card-top"><h4>${escape(r.school)}</h4><span class="agenda-count">${r.students ?? "—"} <small>alunos</small></span></div>
           <p class="agenda-turma">${escape(r.className)}</p>
-          <div class="agenda-meta"><div><span>Localidade</span><strong>${escape(r.locality || "—")}</strong></div><div><span>Transporte</span><strong class="${transporte ? "agenda-yes" : ""}">${escape(r.transport || "—")}</strong></div></div>
+          <div class="agenda-meta"><div><span>Localidade</span><strong>${escape(r.locality || "—")}</strong></div><div><span>Transporte</span><strong class="${transporte ? "agenda-yes" : "agenda-no"}">${escape(r.transport || "—")}</strong></div></div>
         </article>`;
                 })
                 .join("");
