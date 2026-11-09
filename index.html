@@ -2937,6 +2937,33 @@
 .agenda-meta .agenda-no {
   color: #ff3131;
 }
+
+/* Três botões lado a lado */
+.document-links {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Mantém os três juntos no celular */
+@media (max-width: 700px) {
+  .document-links {
+    gap: 6px;
+  }
+
+  .document-link {
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    padding: 12px 5px;
+    gap: 7px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .document-link > span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
     
     </style>
   </head>
@@ -3058,6 +3085,32 @@
               <path d="M5 12h14m-7-7 7 7-7 7" />
             </svg>
           </a>
+
+        <a
+  class="document-link"
+  href="https://avaliacao.smesystem.com.br/login"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Abrir lançamento de respostas"
+>
+  <span class="document-link-icon" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      width="23"
+      height="23"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M9 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" />
+      <path d="m16 3 5 5M10 14l4-1 8-8-3-3-8 8-1 4Z" />
+    </svg>
+  </span>
+
+  <span><strong>Lançar respostas</strong></span>
+</a>  
         </nav>
         <div
           id="documentLinkNotice"
